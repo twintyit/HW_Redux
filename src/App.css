@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --main-color: rgb(215, 215, 215);
+  --head-color: rgb(0, 149, 157);
+  --nav-panel-color: rgb(64, 64, 64);
+  --top-color: rgb(246, 246, 246);
+}
+
+.main {
+  background: var(--main-color);
+}
+
+.top label {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 2px;
+}
+
+
+#searchButton {
+  position: absolute;
+  left: 82%;
+  top: 14%;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  color: var(--head-color);
+  padding-bottom: 10px;
+}
+
+.top {
+  height: 6%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--top-color);
+}
+
+.top h2,
+.top label {
+  padding: 5px;
+}
+
+.nav-panel-conteiner {
+  background: var(--nav-panel-color);
+  display: flex;
+  color: white;
+}
+
+.nav-button {
+  box-sizing: border-box;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background: rgb(124, 124, 124);
+}
+
+.today-conteiner,
+.five-days-conteiner {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.current-weather-conteiner,
+.hourly-conteiner,
+.nearby-places-conteiner {
+  background: var(--top-color);
+  padding: 20px;
+}
+
+.hourly {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.current-weather-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.titles-hourly p,
+.titles-hourly h4 {
+  padding: 10px 0;
+}
+
+.temperature {
+  font-size: 40px;
+}
+
+.weather-icon {
+  height: 50px;
+  padding: 10px;
+}
+
+.icon-conteiner,
+.hourly-elem,
+.temperature-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature-conteiner {
+  padding: 10px;
+}
+
+.hourly-elem p,
+.hourly-elem h4 {
+  padding: 10px 0;
+}
+
+.more-info-conteiner {
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nearby-cities {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 10px 20px;
+  background: rgb(231, 231, 231);
+}
+
+.nearby-icon {
+  height: 20px;
+  padding-right: 40px;
+}
+
+.nearby-cities div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#nearbyPlaces {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button-isClicked {
+  box-sizing: border-box;
+  border-left: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color);
+  border-bottom: 3px solid var(--head-color);
+}
+
+.five-days-conteiner {
+  display: none;
+  background: var(--main-color);
+}
+
+.magnifying-glass {
+  width: 15px;
+}
+
+.error-block {
+  background: var(--top-color);
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  align-content: stretch;
+  justify-content: space-around;
+}
+
+.error-img {
+  height: 350px;
+}
+
+.error-text {
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(123, 123, 123);
+}
+
+.days-block {
+  background: var(--top-color);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.dayElem {
+  padding: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  background: rgb(234, 234, 234);
+}
+
+.container {
+  padding: 10px 30px;
+}
